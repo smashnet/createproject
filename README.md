@@ -1,28 +1,42 @@
-#<title>
+#CreateProject
+Starting a new project is always the same:
 
-Awesome short description of this tool
+* Create a main file
+* Create a README
+* Think of how your tools should be configured
+* ...
+
+... and it's horrible to start with an empty file staring at you.
+
+This little tool creates the basic stuff you need to start a new
+python project, a runnable main.py, a README.md and a config.ini.
+
+No need to start from zero, just fill in the real code and forget
+the hassle with basic stuff ;)
 
 ##Usage
 
-A short usage manual
+It's just two simple steps:
 
-##Example Input:
+1. Enter your data in the config.ini (of this tool ;)
+2. _python createproject.py <projectname>_
 
-##Example Output:
+Yes, you're done! Start writing your code, and don't forget to
+edit your project's README.md!
 
 ##Author
 
-* <author>
-* Mail: <email>
-* XMPP: <xmpp>
-* Twitter: <twitter>
-* GPG-Key-ID: <gpgid>
-* GPG-Key: <gpglink>
-* GPG-Fingerprint: <gpgfingerprint>
+* Nicolas Inden
+* Mail: nico@smashnet.de
+* XMPP: nico@jabber.pgrp.de
+* Twitter: @Smashnet
+* GPG-Key-ID: 0xB2F8AA17
+* GPG-Key: http://files.smashnet.de/B2F8AA17.asc
+* GPG-Fingerprint: A757 5741 FD1E 63E8 357D 48E2 3C68 AE70 B2F8 AA17
 
 ##MIT License
 
-Copyright (c) <year> <author>
+Copyright (c) 2014 Nicolas Inden
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
