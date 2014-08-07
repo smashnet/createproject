@@ -1,0 +1,32 @@
+'''
+Insert a short tool description here.
+
+Author: <author>
+eMail: <email>
+XMPP: <xmpp>
+GPG-Key-ID: <gpglink>
+GPG-Key: <gpglink>
+GPG-Fingerprint: <gpgfingerprint>
+Date: <date>
+License: MIT License
+'''
+
+from configobj import ConfigObj
+import argparse
+import os
+import sys
+import time
+import datetime
+
+if __name__ == '__main__':
+    datestr = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%dT%H:%M:%SZ')
+    parser = argparse.ArgumentParser()
+    parser.add_argument("config", help="The config file")
+    args = parser.parse_args()
+    
+    progdir = os.path.dirname(os.path.abspath(sys.argv[0]))
+    config = os.path.join(progdir, "config.ini")
+    print "Using config: %s" % config
+    config = ConfigObj(config)
+    
+    print datestr + ":", config['project']['name'], "v" + config['project']['version'], "says \"Hello World!\""
