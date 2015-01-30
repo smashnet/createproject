@@ -14,12 +14,18 @@ python project, a runnable main.py, a README.md and a config.ini.
 No need to start from zero, just fill in the real code and forget
 the hassle with basic stuff ;)
 
+##Module dependencies
+
+You need to _pip install _:
+
+* configobj
+
 ##Usage
 
 It's just two simple steps:
 
 1. Enter your data in the config.ini (of this tool ;)
-2. _python createproject.py <projectname>_
+2. _python createproject.py your-projects-name_
 
 Yes, you're done! Start writing your code, and don't forget to
 edit your project's README.md!

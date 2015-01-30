@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 This file creates a template project containing a main.py file, a README.md and LICENSE file.
 
